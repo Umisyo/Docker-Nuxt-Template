@@ -43,7 +43,7 @@ $ docker-compose up
 
 ## License
 
-This software is released under the MIT License, see [LICENSE](https://github.com/Umisyo/Dokcer-Nuxt-Template/blob/master/LICENSE).
+This software is released under the MIT License, see [LICENSE](https://github.com/Umisyo/Docker-Nuxt-Template/blob/master/LICENCE).
 
 ## Authors
 
