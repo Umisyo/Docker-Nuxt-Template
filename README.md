@@ -27,15 +27,24 @@ $ cd Docker-Nuxt-Template
 $ docker-compose build nuxt
 ```
 
-Usage
+## Usage
 
 ```
-$ cd Docker-Nuxt-Template
+$ docker-compose run create-nuxt-app
+```
+
+After that, please develop like normal NuxtJS.
+
+To start the server, just type the following command.
+
+```
 $ docker-compose up
 ```
 
-License
+## License
+
 This software is released under the MIT License, see [LICENSE](https://github.com/Umisyo/Dokcer-Nuxt-Template/blob/master/LICENSE).
 
-Authors
+## Authors
+
 Souta Kusunoki a.k.a Umisyo or そーとく
