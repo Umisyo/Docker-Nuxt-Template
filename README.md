@@ -10,35 +10,46 @@ Nuxt.js v2.0.0
 
 ## Setup(for mac)
 
-```
-$ brew install docker
-$ brew cask install docker
+```bash
+$brew install docker
+$brew cask install docker
 
-$ open /Applications/Docker.app
+$open /Applications/Docker.app
 ```
 
 Register account according to the message
 
-```
-$ git clone https://github.com/Umisyo/Docker-Nuxt-Template
+```bash
+$git clone https://github.com/Umisyo/Docker-Nuxt-Template
 
-$ cd Docker-Nuxt-Template
+$cd Docker-Nuxt-Template
 
-$ docker-compose build nuxt
+$docker-compose build nuxt
 ```
 
 ## Usage
 
-```
-$ docker-compose run create-nuxt-app
+```bash
+$docker-compose run create-nuxt-app
 ```
 
-After that, please develop like normal NuxtJS.
+Make the following changes to package.json to allow access from the host OS.
+
+```diff
+- "dev": "nuxt"
++ "dev": "HOST=0.0.0.0 PORT=3000 nuxt"
+```
+
+Then type the following command.
+
+```bash
+$docker-compose run nuxt yarn install
+```
 
 To start the server, just type the following command.
 
-```
-$ docker-compose up
+```bash
+$docker-compose up
 ```
 
 ## License
